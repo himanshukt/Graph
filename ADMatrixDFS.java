@@ -14,6 +14,7 @@ class bfs{
 			int j=que.poll();
 			System.out.println(j+1);
 			for(int i=0;i<v;i++) {
+				//here j represents the node number and i represts the connected nodes to it
 				if(arr[j][i]==1 && visited[i]==false) {
 					que.add(i);
 					visited[i]=true;
